@@ -1,0 +1,1 @@
+$(function(){$("#msg").hide(),$("button[type='submit']").click(function(){console.log("Form Submitted"),"d0e45878043844ffc41aac437e86b602"==md5($("#u").val())&&"6c7f9dc60f1cee99a27c25ec39bbee89"==md5($("#p").val())?window.location.href="file:///mnt/dungeon/Pushpa%20School/UKG2020/web/index.html":$("#msg").show()})});
