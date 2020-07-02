@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="../css/swiper.min.css"/>
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+	  height: 100%;
+	  overflow: hidden;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 8vh 0;
+    }
+
+    .swiper-container-v {
+      width: 100%;
+	  height: 84%;
+	}
+	.swiper-container-h{
+		width: 100%;
+		height: 84%;
+	}
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+	  background: #222;
+	  color: #fff;
+	  font-weight: bold;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+	  align-items: center;
+	  flex-direction: column;
+    }
+
+    .swiper-container-v {
+      background: #000;
+	}
+	#head, #foot{
+		position: fixed;
+		left: 0;
+		width: 100%;
+		background: yellow;
+		color: #222;
+		z-index: 99999;
+		height: 8vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#head{
+		top: 0;
+		font-family: 'Trajan Pro', sans-serif;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+	#foot{
+		flex-direction: column;
+		bottom: 0;
+		font-family: 'Courier Prime', Courier, monospace;
+		text-align: center;
+	}
+	img{
+		display: flex;
+		height: 100%;
+		width: auto;
+		max-height: 80vh;
+		max-width: 100vw;
+	}
+	.swiper-pagination-h{
+		bottom: 0;
+		background: #2229;
+	}
+	video {
+		max-width: 90%;
+		height: auto;
+	}
+  </style>
+</head>
+
+<body>
+	<div id="head">UKG Daily HW</div>
+	<div id="foot">
+		Swipe &#8673;Up/Down&#8675; to change Date <br />Swipe &#8672;Left/Right&#8674; to change Page
+	</div>
+  <!-- Swiper -->
+  <div class="swiper-container swiper-container-v">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide">Date:02/07/2020<br />
+			<div class="swiper-container swiper-container-h">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../assets/2020-07-02_Pg01.jpg" alt="2020-07-02 Page01"></div>
+					<div class="swiper-slide"><img src="../assets/2020-07-02_Pg02.jpg" alt="2020-07-02 Page02"></div>
+					<div class="swiper-slide"><img src="../assets/2020-07-02_Pg03.jpg" alt="2020-07-02 Page03"></div>
+					<div class="swiper-slide"><img src="../assets/2020-07-02_Pg04.jpg" alt="2020-07-02 Page04"></div>
+					<div class="swiper-slide">
+						<div class="video-container">
+							<video controls>
+								<source src="../assets/2020-06-30_Pg05.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="video-container">
+							<video controls>
+								<source src="../assets/2020-06-30_Pg06.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination swiper-pagination-h"></div>
+			</div>
+		</div>
+		<div class="swiper-slide">Date:01/07/2020<br />
+			<div class="swiper-container swiper-container-h">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../assets/2020-07-01_Pg01.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="../assets/2020-07-01_Pg02.jpg" alt=""></div>
+				</div>
+				<div class="swiper-pagination swiper-pagination-h"></div>
+			</div>
+		</div>
+		<div class="swiper-slide">Date:30/06/2020<br />
+			<div class="swiper-container swiper-container-h">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../assets/2020-06-30_Pg01.jpg" alt="2020-06-30 Page01"></div>
+					<div class="swiper-slide"><img src="../assets/2020-06-30_Pg02.jpg" alt="2020-06-30 Page02"></div>
+					<div class="swiper-slide">
+						<div class="video-container">
+							<video controls>
+								<source src="../assets/2020-06-30_Pg03.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="video-container"><video controls>
+								<source src="../assets/2020-06-30_Pg04.mp4" type="video/mp4">Your browser does not
+								support the video tag.</video></div>
+					</div>
+				</div>
+				<div class="swiper-pagination swiper-pagination-h"></div>
+			</div>
+		</div>
+		<div class="swiper-slide">Date:29/06/2020<br />
+			<div class="swiper-container swiper-container-h">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../assets/2020-06-29_Pg01.jpg" alt="2020-06-29 Page01"></div>
+					<div class="swiper-slide"><img src="../assets/2020-06-29_Pg02.jpg" alt="2020-06-29 Page02"></div>
+					<div class="swiper-slide">
+						<div class="video-container"><video controls>
+								<source src="../assets/2020-06-29_Pg03.mp4" type="video/mp4">Your browser does not
+								support the video tag.</video></div>
+					</div>
+				</div>
+				<div class="swiper-pagination swiper-pagination-h"></div>
+			</div>
+		</div>
+		<div class="swiper-slide">Date:27/06/2020<br />
+			<div class="swiper-container swiper-container-h">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../assets/2020-06-27_Pg01.jpg" alt="2020-06-27 Page01"></div>
+					<div class="swiper-slide"><img src="../assets/2020-06-27_Pg02.jpg" alt="2020-06-27 Page02"></div>
+					<div class="swiper-slide"><img src="../assets/2020-06-27_Pg03.jpg" alt="2020-06-27 Page03"></div>
+					<div class="swiper-slide"><img src="../assets/2020-06-27_Pg04.jpg" alt="2020-06-27 Page04"></div>
+				</div>
+				<div class="swiper-pagination swiper-pagination-h"></div>
+			</div>
+		</div>
+		<div class="swiper-slide">Date:26/06/2020<br />
+			<div class="swiper-container swiper-container-h">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../assets/2020-06-26_Pg01.jpg" alt="2020-06-26 Page01"></div>
+					<div class="swiper-slide"><img src="../assets/2020-06-26_Pg02.jpg" alt="2020-06-26 Page02"></div>
+				</div>
+				<div class="swiper-pagination swiper-pagination-h"></div>
+			</div>
+		</div>
+		<div class="swiper-slide">Date:25/06/2020<br />
+			<div class="swiper-container swiper-container-h">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../assets/2020-06-25_Pg01.jpg" alt="2020-06-25 Page01"></div>
+					<div class="swiper-slide"><img src="../assets/2020-06-25_Pg02.jpg" alt="2020-06-25 Page02"></div>
+				</div>
+				<div class="swiper-pagination swiper-pagination-h"></div>
+			</div>
+		</div>
+		<div class="swiper-slide">Date:24/06/2020<br />
+			<div class="swiper-container swiper-container-h">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../assets/2020-06-24_Pg01.jpg" alt="2020-06-24 Page01"></div>
+					<div class="swiper-slide"><img src="../assets/2020-06-24_Pg02.jpg" alt="2020-06-24 Page02"></div>
+					<div class="swiper-slide"><img src="../assets/2020-06-24_Pg03.jpg" alt="2020-06-24 Page03"></div>
+				</div>
+				<div class="swiper-pagination swiper-pagination-h"></div>
+			</div>
+		</div>
+		<div class="swiper-slide">Date:23/06/2020<br />
+			<div class="swiper-container swiper-container-h">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../assets/2020-06-23_Pg01.jpg" alt="2020-06-23 Page01"></div>
+				</div>
+				<div class="swiper-pagination swiper-pagination-h"></div>
+			</div>
+		</div>
+		<div class="swiper-slide">Date:22/06/2020<br />
+			<div class="swiper-container swiper-container-h">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../assets/2020-06-22_Pg01.jpg" alt="2020-06-22 Page01"></div>
+					<div class="swiper-slide"><img src="../assets/2020-06-22_Pg02.jpg" alt="2020-06-22 Page02"></div>
+					<div class="swiper-slide"><img src="../assets/2020-06-22_Pg03.jpg" alt="2020-06-22 Page03"></div>
+					<div class="swiper-slide"><img src="../assets/2020-06-22_Pg04.jpg" alt="2020-06-22 Page04"></div>
+				</div>
+				<div class="swiper-pagination swiper-pagination-h"></div>
+			</div>
+		</div>
+		<div class="swiper-slide">Date:20/06/2020<br />
+			<div class="swiper-container swiper-container-h">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../assets/2020-06-20_Pg01.jpg" alt="2020-06-20 Page01"></div>
+					<div class="swiper-slide"><img src="../assets/2020-06-20_Pg02.jpg" alt="2020-06-20 Page02"></div>
+					<div class="swiper-slide"><img src="../assets/2020-06-20_Pg03.jpg" alt="2020-06-20 Page03"></div>
+				</div>
+				<div class="swiper-pagination swiper-pagination-h"></div>
+			</div>
+		</div>
+		<div class="swiper-slide">Date:19/06/2020<br />
+			<div class="swiper-container swiper-container-h">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../assets/2020-06-19_Pg01.jpg" alt="2020-06-19 Page01"></div>
+				</div>
+				<div class="swiper-pagination swiper-pagination-h"></div>
+			</div>
+		</div>
+		<div class="swiper-slide">Date:18/06/2020<br />
+			<div class="swiper-container swiper-container-h">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../assets/2020-06-18_Pg01.jpg" alt="2020-06-18 Page01"></div>
+					<div class="swiper-slide"><img src="../assets/2020-06-18_Pg02.jpg" alt="2020-06-18 Page02"></div>
+				</div>
+				<div class="swiper-pagination swiper-pagination-h"></div>
+			</div>
+		</div>
+		<div class="swiper-slide">Date: 17/06/2020<br />
+			<div class="swiper-container swiper-container-h">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../assets/2020-06-17_Pg01.jpg" alt="2020-06-17 Page01"></div>
+					<div class="swiper-slide"><img src="../assets/2020-06-17_Pg02.jpg" alt="2020-06-17 Page02"></div>
+					<div class="swiper-slide"><img src="../assets/2020-06-17_Pg03.jpg" alt="2020-06-17 Page03"></div>
+				</div>
+				<div class="swiper-pagination swiper-pagination-h"></div>
+			</div>
+		</div>
+		<div class="swiper-slide">Date: 16/06/2020<br />
+			<div class="swiper-container swiper-container-h">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../assets/2020-06-16_Pg01.jpg" alt="2020-06-16 Page01"></div>
+					<div class="swiper-slide"><img src="../assets/2020-06-16_Pg02.jpg" alt="2020-06-16 Page02"></div>
+					<div class="swiper-slide"><img src="../assets/2020-06-16_Pg03.jpg" alt="2020-06-16 Page03"></div>
+				</div>
+				<div class="swiper-pagination swiper-pagination-h"></div>
+			</div>
+		</div>
+		<div class="swiper-slide">Date: 15/06/2020<br />
+			<div class="swiper-container swiper-container-h">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../assets/2020-06-15_Pg00.jpg" alt="2020-06-15 Page01"></div>
+					<div class="swiper-slide"><img src="../assets/2020-06-15_Pg01.jpg" alt="2020-06-15 Page02"></div>
+				</div>
+				<div class="swiper-pagination swiper-pagination-h"></div>
+			</div>
+		</div>
+		<div class="swiper-slide">You've reached the end of Assignments, please swipe down to view the assignments.
+		</div>
+	</div>
+	<div class="swiper-pagination swiper-pagination-v"></div>
+</div>
+
+  <!-- Swiper JS -->
+  <script src="../js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiperH = new Swiper('.swiper-container-h', {
+      spaceBetween: 50,
+      pagination: {
+        el: '.swiper-pagination-h',
+		//clickable: true,
+		type: 'fraction',
+      },
+    });
+    var swiperV = new Swiper('.swiper-container-v', {
+      direction: 'vertical',
+      spaceBetween: 50,
+      pagination: {
+        el: '.swiper-pagination-v',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>
