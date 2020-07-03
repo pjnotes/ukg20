@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="../css/uikit.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Roboto:wght@700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="../css/swiper.min.css"/>
 
@@ -114,6 +115,26 @@
 		max-width: 100vw;
 		max-height: 80vh;
 	}
+	figure{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 80vh;
+		box-shadow: inset red 2px 2px, inset red -2px -2px;
+	}
+	.video-responsive{
+		overflow:hidden;
+		padding-bottom:56.25%;
+		position:relative;
+		height:0;
+	}
+	.video-responsive iframe{
+		left:0;
+		top:0;
+		height:100%;
+		width:100%;
+		position:absolute;
+	}
   </style>
 </head>
 
@@ -125,6 +146,26 @@
   <!-- Swiper -->
   <div class="swiper-container swiper-container-v">
 	<div class="swiper-wrapper">
+		<div class="swiper-slide">Date:03/07/2020<br />
+			<div class="swiper-container swiper-container-h">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="../assets/2020-07-03_Pg01.jpg" alt="2020-07-03 Page01">
+					</div>
+					<div class="swiper-slide"><img src="../assets/2020-07-03_Pg02.jpg" alt="2020-07-03 Page02"></div>
+					<div class="swiper-slide"><img src="../assets/2020-07-03_Pg03.jpg" alt="2020-07-03 Page03"></div>
+					<div class="swiper-slide"><img src="../assets/2020-07-03_Pg04.jpg" alt="2020-07-03 Page04"></div>
+					<div class="swiper-slide"><img src="../assets/2020-07-03_Pg05.jpg" alt="2020-07-03 Page05"></div>
+					<div class="swiper-slide">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/ZVBl1qe4Smw" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen uk-responsive uk-video></iframe>
+					</div>
+					<div class="swiper-slide">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/rXU_V_46__Y" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen uk-responsive uk-video></iframe>
+					</div>
+				</div>
+				<div class="swiper-pagination swiper-pagination-h"></div>
+			</div>
+		</div>
 		<div class="swiper-slide">Date:02/07/2020<br />
 			<div class="swiper-container swiper-container-h">
 				<div class="swiper-wrapper">
@@ -133,20 +174,10 @@
 					<div class="swiper-slide"><img src="../assets/2020-07-02_Pg03.jpg" alt="2020-07-02 Page03"></div>
 					<div class="swiper-slide"><img src="../assets/2020-07-02_Pg04.jpg" alt="2020-07-02 Page04"></div>
 					<div class="swiper-slide">
-						<div class="video-container">
-							<video controls>
-								<source src="../assets/2020-07-02_Pg05.mp4" type="video/mp4">
-								Your browser does not support the video tag.
-							</video>
-						</div>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/FOHMElM1x60" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen uk-responsive uk-video="automute: false"></iframe>
 					</div>
 					<div class="swiper-slide">
-						<div class="video-container">
-							<video controls>
-								<source src="../assets/2020-07-02_Pg06.mp4" type="video/mp4">
-								Your browser does not support the video tag.
-							</video>
-						</div>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/1UQLaYcACpg" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen uk-responsive uk-video></iframe>
 					</div>
 				</div>
 				<div class="swiper-pagination swiper-pagination-h"></div>
@@ -167,17 +198,12 @@
 					<div class="swiper-slide"><img src="../assets/2020-06-30_Pg01.jpg" alt="2020-06-30 Page01"></div>
 					<div class="swiper-slide"><img src="../assets/2020-06-30_Pg02.jpg" alt="2020-06-30 Page02"></div>
 					<div class="swiper-slide">
-						<div class="video-container">
-							<video controls>
-								<source src="../assets/2020-06-30_Pg03.mp4" type="video/mp4">
-								Your browser does not support the video tag.
-							</video>
-						</div>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/scJeHW68708" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen uk-responsive uk-video="automute: false"></iframe>
 					</div>
 					<div class="swiper-slide">
-						<div class="video-container"><video controls>
-								<source src="../assets/2020-06-30_Pg04.mp4" type="video/mp4">Your browser does not
-								support the video tag.</video></div>
+						<div class="video-responsive">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/rN8qjxqvxbo" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen uk-responsive uk-video="automute: false"></iframe>
+						</div>
 					</div>
 				</div>
 				<div class="swiper-pagination swiper-pagination-h"></div>
@@ -189,9 +215,10 @@
 					<div class="swiper-slide"><img src="../assets/2020-06-29_Pg01.jpg" alt="2020-06-29 Page01"></div>
 					<div class="swiper-slide"><img src="../assets/2020-06-29_Pg02.jpg" alt="2020-06-29 Page02"></div>
 					<div class="swiper-slide">
-						<div class="video-container"><video controls>
-								<source src="../assets/2020-06-29_Pg03.mp4" type="video/mp4">Your browser does not
-								support the video tag.</video></div>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/KohpiBRK1fg" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen uk-responsive uk-video="automute: false"></iframe>
+						<!--div class="video-responsive">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/KohpiBRK1fg?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div-->
 					</div>
 				</div>
 				<div class="swiper-pagination swiper-pagination-h"></div>
@@ -269,6 +296,7 @@
 			<div class="swiper-container swiper-container-h">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide"><img src="../assets/2020-06-19_Pg01.jpg" alt="2020-06-19 Page01"></div>
+					<div class="swiper-slide"><img src="../assets/2020-06-19_Pg02.jpg" alt="2020-06-19 Page02"></div>
 				</div>
 				<div class="swiper-pagination swiper-pagination-h"></div>
 			</div>
@@ -318,6 +346,9 @@
 </div>
 
   <!-- Swiper JS -->
+  <script src="../js/jquery-3.5.1.min.js"></script>
+  <script src="../js/uikit.min.js"></script>
+  <script src="../js/uikit-icons.min.js"></script>
   <script src="../js/swiper.min.js"></script>
 
   <!-- Initialize Swiper -->
